@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Виктор Баранов](https://up.htmlacademy.ru/htmlcss/17/user/320609).
-* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/id86119).
+* Наставник: [Максим Сальников](https://htmlacademy.ru/profile/liss38).
 
 ---
 
