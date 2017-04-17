@@ -8,12 +8,12 @@
             <header class="main-header">
                 <div class="container">
                     <div class="header-logo">
-                        <a href="#"><img src="#" width="163" height="35" alt="device"></a>
+                        <a href="index.html"><img src="#" width="163" height="35" alt="device"></a>
                     </div>
                     <div class="user-block">
                         <form class="user-search" action="https://echo.htmlacademy.ru" method="get" >
-                            <p><input type="search" name="search" placeholder="Поиск по сайту"> 
-                            <input type="submit" value="Найти"></p>
+                            <input type="search" name="search" placeholder="Поиск по сайту"> 
+                            <input type="submit" value="Найти">
                         </form>
                         <ul>    
                             <li><a class="login" href="#">Войти</a></li>
@@ -28,7 +28,7 @@
                                     <li><a href="#">Виртуальная реальность</a></li>
                                     <li><a href="#">Фитнес-браслеты</a></li>
                                     <li><a href="#">Квардрокоптеры</a></li>
-                                    <li><a href="#">Моноподы для селфи</a></li>
+                                    <li><a>Моноподы для селфи</a></li>
                                     <li><a href="#">Умные часы</a></li>
                                     <li><a href="#">Экшн-камеры</a></li>        
                                 </ul>
@@ -40,8 +40,8 @@
                     </nav>
                 </div>
 			</header>
+			<h1 class="breadcrumbs-title">Моноподы для селфи</h1>
 			<div class="breadcrumbs">
-				<h2 class="breadcrumbs-title">Моноподы для селфи</h2>
 				<ul>
 					<li><a href="#">Главная</a></li>
 					<li><a href="#">Каталог товаров</a></li>
@@ -49,7 +49,7 @@
 				</ul>
 			</div>
 			<main class="catalog-section">
-				<section class="filter">
+				<aside class="filter">
 					<header class="filter-header">
 						<h3>Фильтр:</h3>
 					</header>
@@ -57,59 +57,100 @@
 						<form action="https://echo.htmlacademy.ru" method="get">
 							<fieldset class="price">
 								<legend>Стоимость</legend>
-								<input type="range" name="price" min="0" max="5000" step="1">
-								<p>от 0</p>
-								<p>до 5000</p>
+								<label for="price-id">Стоимость</label>
+								<input type="range" name="price" min="0" max="5000" step="1" id="price-id">
+								<span>от 0</span>
+								<span>до 5000</span>
 							</fieldset>
 							<fieldset class="color">
 								<legend>Цвет</legend>
-								<input type="checkbox" name="black">
-								<input type="checkbox" name="white">
-								<input type="checkbox" name="blue">
-								<input type="checkbox" name="red">	
-								<input type="checkbox" name="pink">
+								<input type="checkbox" name="black" id="black">
+								<label for="black">Черный</label>
+								<input type="checkbox" name="white" id="white">
+								<label for="white">Белый</label>
+								<input type="checkbox" name="blue" id="blue">
+								<label for="blue">Синий</label>
+								<input type="checkbox" name="red" id="red">
+								<label for="red">Красный</label>
+								<input type="checkbox" name="pink" id="pink">
+								<label for="pink">Розовый</label>
 							</fieldset>
 							<fieldset class="bluetooth">
 								<legend>Bluetooth</legend>
-								<input type="radio" name="bluetooth" value="yes">
-								<input type="radio" name="bluetooth" value="no">
+								<input type="radio" name="bluetooth" value="yes" id="bt-yes">
+								<label for="bt-yes">Есть</label>
+								<input type="radio" name="bluetooth" value="no" id="bt-no">
+								<label for="bt-no">Нет</label>
 								</fieldset>
 							<input type="submit" class="btn" value="Показать">
 						</form>
 					</section>
-				</section>
+				</aside>
 				<section class="sorting">
 					<header class="sorting-header">
 						<h3>Сортировка:</h3>
-						<label for="by-price">По цене</label>
-						<input type="radio" id="by-price" name="sorting-option">
-						<label for="by-type">По типу</label>
-						<input type="radio" id="by-type" name="sorting-option">
-						<label for="by-popular">По популярности</label>
-						<input type="radio" id="by-popular" name="sorting-option">
+						<ul sorting-option>
+							<li class="by-price"><a href="#">По цене</a></li>
+							<li class="by-type"><a href="#">По типу</a></li>
+							<li class="by-popular"><a href="#">По пулярности</a></li>
+						</ul>
 						<div class="">Прокрутка</div>
 					</header>
 					<div class="catalog">
 						<div class="catalog-items">
 							<div class="item">
-								<img src="#" width="360" height="380" alt="Любительская селфи-палка">
+								<div class="item-card">
+									<img src="#" width="360" height="380" alt="Любительская селфи-палка">
+									<ul>
+										<li><a class="btn" href="#">В корзину</a></li>
+										<li><a href="#">Добавить к сравнению</a></li>
+									</ul>
+								</div>
+								<span>Любительская селфи-палка</span>
+								<span class="price">500 руб.</span>
 							</div>
 							<div class="item">
-								<img src="#" width="360" height="380" alt="Профессиональная селфи-палка">  
+								<div class="item-card">
+									<img src="#" width="360" height="380" alt="Профессиональная селфи-палка">
+									<ul>
+										<li><a class="btn" href="#">В корзину</a></li>
+										<li><a href="#">Добавить к сравнению</a></li>
+									</ul>
+								</div>
+								<span>Профессиональная селфи-палка</span>
+								<span class="price">1 500 руб.</span>
 							</div>
 							<div class="item">
-								<img src="#" width="360" height="380" alt="Непотопляемая селфи-палка">
+								<div>
+									<img src="#" width="360" height="380" alt="Непотопляемая селфи-палка">
+									<ul>
+										<li><a class="btn" href="#">В корзину</a></li>
+										<li><a href="#">Добавить к сравнению</a></li>
+									</ul>
+								</div>
+								<span>Непотопляемая селфи-палка</span>
+								<span class="price">2 500руб.</span>
 							</div>
 							<div class="item">
-								<img src="#" width="360" height="380" alt="Селфи-палка &laquoСледуй за мной&raquo">
+								<div>
+									<img src="#" width="360" height="380" alt="Селфи-палка Следуй за мной">
+									<ul>
+										<li><a class="btn" href="#">В корзину</a></li>
+										<li><a href="#">Добавить к сравнению</a></li>
+									</ul>
+								</div>
+								<span>Селфи палка Следуй за мной</span>
+								<span class="price">4 900 руб.</span>
 							</div>
 						</div>
 						<div class="paginator">
-							<a class="prev" href="#prev">Назад</a>
-							<a href="#">1</a>
-							<a href="#">2</a>
-							<a href="#">3</a>
-							<a class="next" href="#next">Вперёд</a>
+							<ul>
+								<li><a class="prev" href="#prev">Назад</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a class="next" href="#next">Вперёд</a></li>
+							</ul>
 						</div>
 					</div>
 				</section>
@@ -118,11 +159,11 @@
                 <div class="container">  
                     <div class="footer-top">
                         <div class="footer-logo">
-                            <a href="#"><img src="#" width="163" height="35" alt="device"></a>
+                            <a href="index.html"><img src="#" width="163" height="35" alt="device"></a>
                         </div>
                         <ul>    
                             <li><a class="login" href="#">Войти</a></li>
-                            <li><a class="сompare" href="#">Сравнить</a> </li>
+                            <li><a class="сompare" href="#">Сравнить</a></li>
                             <li><a class="Basket" href="#">Корзина</a></li>
                         </ul>    
                     </div>
