@@ -12,6 +12,13 @@
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
+* {
+    margin: 0;
+    padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
 body {
 	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 15px;
@@ -26,4 +33,106 @@ body {
 	font-size: 47px;
 	line-height: normal;
 	color: black;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.header-logo {
+	width: 200px;
+	margin-left: 60px;
+	margin-top: 20px;
+}
+
+.user-block {
+	width: 1040px;
+	margin-top: 18px;
+	margin-bottom: 36px;
+	margin-left: 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-self: flex-start;
+}
+
+.user-block .user-nav {
+	width: 560px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: space-between;
+	list-style: none;
+}
+
+.main-nav .main-menu {
+	width: 1040px;
+	margin: 0 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 18px;
+	font-family: gilroy;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+.catalog .catalog-nav {
+	width: 600px;
+	font-size: 15px;
+	line-height: 36px;
+	font-family: gilroy;
+	font-weight: lighter;
+	text-transform: none;
+	letter-spacing: normal;
+}
+
+.slider-inner .slide {
+	display: flex;
+	justify-content: space-between; 
+	width: 1040px;
+	margin: 0 60px;
+}
+
+.slide-feature .number {
+	font-size: 12em;
+	font-family: gilroy;
+	font-weight: bold;
+}
+
+.slide-image {
+	flex: 1;
+}
+
+.slide-feature {
+	flex: 1;
+}
+
+.feature-list {
+	display: flex;
+	width: 1160px;
+	flex-direction: row;
+	justify-content: space-between; 
+	margin: 0;
+}
+
+.feature-item {
+	font-size: 18px;
+	line-height: 22px;
+	font-family: gilroy;
+	font-weight: bold;	
+	width: 160px;
+}
+
+.feature-item::before {
+	content: "";
+	background: url("../img/features.png")
+	height: 200px;
 }
