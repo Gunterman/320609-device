@@ -18,39 +18,37 @@
 						<input type="submit" value="Найти">
 					</form>
 					<ul class="user-nav">    
-						<li><a class="login" href="#">Войти</a></li>
+						<li class="item"><a class="login" href="#">Войти</a></li>
 						<li><a class="сompare" href="#">Сравнить</a></li>
 						<li><a class="basket" href="#">Корзина</a></li>
 					</ul>
 				</div>
 				<nav class="main-nav">
 					<ul class="main-menu">
-						<li class="catalog"><a href="#">Каталог товаров</a>
+						<li class="catalog"><a href="catalog.html">Каталог товаров</a>
 							<ul class="catalog-nav">
 								<li><a href="#">Виртуальная реальность</a></li>
 								<li><a href="#">Фитнес-браслеты</a></li>
 								<li><a href="#">Квардрокоптеры</a></li>
-								<li><a>Моноподы для селфи</a></li>
+								<li><a href="catalog.html">Моноподы для селфи</a></li>
 								<li><a href="#">Умные часы</a></li>
 								<li><a href="#">Экшн-камеры</a></li>        
 							</ul>
 						</li>
-						<li><a href="#">Доставка</a></li>
-						<li><a href="#">Гарантия</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li class="menu-delivery"><a href="#">Доставка</a></li>
+						<li class="menu-warranty"><a href="#">Гарантия</a></li>
+						<li class="menu-contacts"><a href="#">Контакты</a></li>
 					</ul>
 				</nav>
-			</div>
+			</div>               
 		</header>
-		<div class="container">
+		<div class="container title">
 			<h1 class="breadcrumbs-title">Моноподы для селфи</h1>
-			<div class="breadcrumbs">
-				<ul>
-					<li><a href="#">Главная</a></li>
-					<li><a href="#">Каталог товаров</a></li>
-					<li class="current"><a href="#">Моноподы для селфи</a></li>
-				</ul>
-			</div>
+			<ul class="breadcrumbs">
+				<li class="breadcrumbs-link"><a href="index.html">Главная</a></li>
+				<li class="breadcrumbs-link"><a href="#">Каталог товаров</a></li>
+				<li class="current"><a>Моноподы для селфи</a></li>
+			</ul>
 		</div>
 		<main class="catalog-section">
 			<div class="container">
@@ -61,7 +59,6 @@
 					<section class="filter-form">
 						<form action="https://echo.htmlacademy.ru" method="get">
 							<fieldset class="price">
-								<legend>Стоимость</legend>
 								<label for="price-id">Стоимость</label>
 								<input type="range" name="price" min="0" max="5000" step="1" id="price-id">
 								<span>от 0</span>
@@ -93,70 +90,67 @@
 				</aside>
 				<section class="sorting">
 					<header class="sorting-header">
-						<h3>Сортировка:</h3>
-						<ul class="sorting-option">
-							<li class="by-price"><a href="#">По цене</a></li>
-							<li class="by-type"><a href="#">По типу</a></li>
-							<li class="by-popular"><a href="#">По пулярности</a></li>
+						<h3 class="sorting-title">Сортировка:</h3>
+						<ul class="sorting-options">
+							<li class="sorting-option"><a href="#">По цене</a></li>
+							<li class="sorting-option"><a href="#">По типу</a></li>
+							<li class="sorting-option"><a href="#">По популярности</a></li>
 						</ul>
-						<div class="">Прокрутка</div>
 					</header>
 					<div class="catalog">
 						<div class="catalog-items">
-							<div class="item">
+							<div class="catalog-item">
 								<div class="item-card">
-									<img src="img/easy-selfie.jpg" width="360" height="380" alt="Любительская селфи-палка">
-									<ul>
+									<img class="card-img" src="img/easy-selfie.jpg" width="360" height="380" alt="Любительская селфи-палка">
+									<ul class="item-nav">
 										<li><a class="btn" href="#">В корзину</a></li>
 										<li><a href="#">Добавить к сравнению</a></li>
 									</ul>
 								</div>
-								<span>Любительская селфи-палка</span>
+								<span class="item-name">Любительская селфи-палка</span>
 								<span class="price">500 руб.</span>
 							</div>
-							<div class="item">
+							<div class="catalog-item">
 								<div class="item-card">
-									<img src="img/pro-selfie.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-									<ul>
+									<img class="card-img" src="img/pro-selfie.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+									<ul class="item-nav">
 										<li><a class="btn" href="#">В корзину</a></li>
 										<li><a href="#">Добавить к сравнению</a></li>
 									</ul>
 								</div>
-								<span>Профессиональная селфи-палка</span>
+								<span class="item-name">Профессиональная селфи-палка</span>
 								<span class="price">1 500 руб.</span>
 							</div>
-							<div class="item">
+							<div class="catalog-item">
 								<div>
-									<img src="img/underwater-selfie.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-									<ul>
+									<img class="card-img" src="img/underwater-selfie.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+									<ul class="item-nav">
 										<li><a class="btn" href="#">В корзину</a></li>
 										<li><a href="#">Добавить к сравнению</a></li>
 									</ul>
 								</div>
-								<span>Непотопляемая селфи-палка</span>
+								<span class="item-name">Непотопляемая селфи-палка</span>
 								<span class="price">2 500руб.</span>
 							</div>
-							<div class="item">
+							<div class="catalog-item">
 								<div>
-									<img src="img/hand-selfie.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной">
-									<ul>
+									<img class="card-img" src="img/hand-selfie.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной">
+									<ul class="item-nav">
 										<li><a class="btn" href="#">В корзину</a></li>
 										<li><a href="#">Добавить к сравнению</a></li>
 									</ul>
 								</div>
-								<span>Селфи палка Следуй за мной</span>
+								<span class="item-name">Селфи палка Следуй за мной</span>
 								<span class="price">4 900 руб.</span>
 							</div>
 						</div>
-						<div class="paginator">
-							<ul>
-								<li><a class="prev" href="#prev">Назад</a></li>
-								<li><a href="#">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-								<li><a class="next" href="#next">Вперёд</a></li>
-							</ul>
-						</div>
+						<ul class="paginator">
+								<li class="prev"><a href="#prev">Назад</a></li>
+								<li class="page"><a>1</a></li>
+								<li class="page"><a href="#">2</a></li>
+								<li class="page"><a href="#">3</a></li>
+								<li  class="next"><a href="#next">Вперёд</a></li>
+						</ul>
 					</div>
 				</section>
 			</div>
@@ -165,32 +159,30 @@
 			<div class="container">  
 				<div class="footer-top">
 					<div class="footer-logo">
-						<a href="index.html"><img src="img/logo-footer.png" width="163" height="35" alt="device"></a>
+						<a href="index.html"><img src="img/logo-footer.png" width="163" height="36" alt="device"></a>
 					</div>
-					<ul>    
+					<ul class="footer-nav">    
 						<li><a class="login" href="#">Войти</a></li>
-						<li><a class="сompare" href="#">Сравнить</a></li>
-						<li><a class="Basket" href="#">Корзина</a></li>
+						<li><a class="сompare" href="#">Сравнить</a> </li>
+						<li><a class="basket" href="#">Корзина</a></li>
 					</ul>    
 				</div>
 				<div class="footer-middle">
 					<p>г. Москва, ул. Строителей, 15</p>
-					<div class="footer-nav">
-						<ul>
+					<ul class="footer-nav">
 							<li><a href="#">Доставка</a></li>
 							<li><a href="#">Гарантия</a></li>
 							<li><a href="#">Контакты</a></li>
-						</ul>
-					</div>
+					</ul>
 					<p>Тел.: +7 (495) 495-95-95</p>
 				</div>
 				<div class="footer-bottom">
 					<div class="footer-social">
-						<a class="social-btn fb" href="https://facebook.com/">Фейсбук</a>
-						<a class="social-btn inst" href="https://instagram.com/">Инстаграм</a>
-						<a class="social-btn tw" href="https://twitter.com/">Твиттер</a>
+						<a class="social-btn" href="https://facebook.com/">Фейсбук</a>
+						<a class="social-btn" href="https://instagram.com/">Инстаграм</a>
+						<a class="social-btn" href="https://twitter.com/">Твиттер</a>
 					</div>
-					<a class="htmlacademy" href="https://htmlacademy.ru/"><img src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy"></a>
+					<a class="htmlacademy" href="https://htmlacademy.ru/"><img src="img/htmlacademy.png" width="27" height="34" alt="htmlacademy"></a>
 				</div>
 			</div>
 		</footer>
