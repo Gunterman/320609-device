@@ -5,6 +5,7 @@
         <title>HTML Academy: Девайс</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
     </head>
 	<body>
 		<header class="main-header">
@@ -18,7 +19,7 @@
 						<input type="submit" value="Найти">
 					</form>
 					<ul class="user-nav">    
-						<li class="item"><a class="login" href="#">Войти</a></li>
+						<li><a class="login" href="#">Войти</a></li>
 						<li><a class="сompare" href="#">Сравнить</a></li>
 						<li><a class="basket" href="#">Корзина</a></li>
 					</ul>
@@ -45,16 +46,19 @@
 		<div class="slider">
 			<div class="container">
 				<input type="radio" id="slider-btn-1" name="toggle" checked>
+				<label for="slider-btn-1"></label>
 				<input type="radio" id="slider-btn-2" name="toggle">
+				<label for="slider-btn-2"></label>
 				<input type="radio" id="slider-btn-3" name="toggle">
+				<label for="slider-btn-3"></label>
 				<div class="slider-controls">
-					<label for="btn-1"></label>
-					<label for="btn-2"></label>
-					<label for="btn-3"></label>
+					<label for="slider-btn-1"></label>
+					<label for="slider-btn-2"></label>
+					<label for="slider-btn-3"></label>
 				</div>
 				<div class="slide">
 						<div class="slide-image">
-							<img src="img/monopod.png" width="384" height="486" alt="Монопод для селфи">
+							<img class="monopod" src="img/monopod.png" width="384" height="486" alt="Монопод для селфи">
 						</div>
 						<div class="slide-feature">
 							<span class="number">01</span>
@@ -77,7 +81,7 @@
 				</div>
 				<div class="slide">
 						<div class="slide-image">
-							<img src="img/tracker.png" width="345" height="485" alt="Фитнес-браслет">
+							<img class="tracker" src="img/tracker.png" width="345" height="485" alt="Фитнес-браслет">
 						</div>
 						<div class="slide-feature">
 							<span class="number">02</span>
@@ -96,20 +100,20 @@
 				</div>
 				<div class="slide">
 						<div class="slide-image">
-							<img src="img/quadrocopter.png" width="526" height="334" alt="Квадрокоптер">
+							<img class="quadrocopter" src="img/quadrocopter.png" width="526" height="334" alt="Квадрокоптер">
 						</div>
 						<div class="slide-feature">
 							<span class="number">03</span>
 							<h2 class="caption">Порхает как бабочка,<br>жалит как пчела!</h2>
 							<p class="feature">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 							<a class="btn" href="#">Подробнее</a>
-							<table class="feature-table">
+							<table class="feature-table quadro">
 								<tr class="table-header">
 									<td>800 м</td>
-									<td>Дальность полета</td>
+									<td>50 м</td>
 								</tr>
 								<tr class="table-data">
-									<td>50 м</td>
+									<td>Дальность полета</td>
 									<td>Радиус поражения</td>
 								</tr>
 							</table>
