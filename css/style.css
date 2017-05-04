@@ -620,7 +620,7 @@ input[name="toggle2"] {
 .services-slider .container { 
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 122px
+	margin-bottom: 94px
 }
 
 .services-controls {
@@ -792,6 +792,44 @@ input[id="btn-3"]:checked~.services-slide:nth-of-type(3) {
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 130px;
+}
+
+.logo {
+	width: 260px;
+	height: 100px;
+	font-size: 0;
+}
+
+.logo.dji {
+	background: url(../img/sprite-dji.png) no-repeat 0 -100px;
+}
+
+.logo.dji:hover {
+	background: url(../img/sprite-dji.png) no-repeat 0 0;
+}
+
+.logo.sp-gadgets {
+	background: url(../img/sprite-spg.png) no-repeat 0 -100px;
+}
+
+.logo.sp-gadgets:hover {
+	background: url(../img/sprite-spg.png) no-repeat 0 0;
+}
+
+.logo.go-pro {
+	background: url(../img/sprite-gp.png) no-repeat 0 -100px;
+}
+
+.logo.go-pro:hover {
+	background: url(../img/sprite-gp.png) no-repeat 0 0px;
+}
+
+.logo.vive {
+	background: url(../img/sprite-vive.png) no-repeat 0 -100px;
+}
+
+.logo.vive:hover {
+	background: url(../img/sprite-vive.png) no-repeat 0 0px;
 }
 
 .about .container {
