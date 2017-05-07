@@ -19,7 +19,7 @@
 						<input type="submit" value="Найти">
 					</form>
 					<ul class="user-nav">    
-						<li><a class="login" href="#">Войти</a></li>
+						<li><a class="login" href="#">Валентин Петухов</a><a class="exit" href="#">Выйти</a></li>
 						<li><a class="сompare" href="#">Сравнить</a></li>
 						<li><a class="basket" href="#">Корзина</a></li>
 					</ul>
@@ -48,22 +48,44 @@
 			<ul class="breadcrumbs">
 				<li class="breadcrumbs-link"><a href="index.html">Главная</a></li>
 				<li class="breadcrumbs-link"><a href="#">Каталог товаров</a></li>
-				<li class="current"><a>Моноподы для селфи</a></li>
+				<li class="breadcrumbs-link-current"><a>Моноподы для селфи</a></li>
 			</ul>
 		</div>
+		<section class="catalog-header">
+			<div class="sorting-filter">
+				<h3 class="filter-title">Фильтр:</h3>
+				<h3 class="sorting-title">Сортировка:</h3>
+				<ul class="sorting-options">
+					<li class="sorting-option"><a href="#">По цене</a></li>
+					<li class="sorting-option"><a href="#">По типу</a></li>
+					<li class="sorting-option"><a href="#">По популярности</a></li>
+				</ul>
+				<a class="ascending sorting" href="#">up</a>
+				<a class="descending sorting" href="#">down</a>
+			</div>
+		</section>
 		<main class="catalog-section">
 			<div class="container">
 				<aside class="filter">
-					<header class="filter-header">
-						<h3>Фильтр:</h3>
-					</header>
 					<section class="filter-form">
 						<form action="https://echo.htmlacademy.ru" method="get">
-							<fieldset class="price">
-								<label for="price-id">Стоимость</label>
-								<input type="range" name="price" min="0" max="5000" step="1" id="price-id">
-								<span>от 0</span>
-								<span>до 5000</span>
+							<fieldset class="price-range">
+								<div class="filter-range-title">
+									Стоимость
+								</div>
+								<div class="range-controls">
+										<div class="scale">
+											<div class="bar"></div>
+										</div>
+									<div class="toggle toggle-min"></div>
+									<div class="toggle toggle-max"></div>
+								</div>
+								<div class="price-controls">
+									<label class="min-price">от </label>
+									<input name="min-price" type="text" value="0">
+									<label class="max-price">до</label>
+									<input name="max-price" type="text" value="5000">
+								</div>
 							</fieldset>
 							<fieldset class="color">
 								<legend>Цвет</legend>
@@ -85,72 +107,72 @@
 								<input type="radio" name="bluetooth" value="no" id="bt-no">
 								<label for="bt-no">Нет</label>
 							</fieldset>
-							<input type="submit" class="btn" value="Показать">
+							<button type="submit" class="btn">Показать</button>
 						</form>
 					</section>
 				</aside>
-				<section class="sorting">
-					<header class="sorting-header">
-						<h3 class="sorting-title">Сортировка:</h3>
-						<ul class="sorting-options">
-							<li class="sorting-option"><a href="#">По цене</a></li>
-							<li class="sorting-option"><a href="#">По типу</a></li>
-							<li class="sorting-option"><a href="#">По популярности</a></li>
-						</ul>
-					</header>
-					<div class="catalog">
+				<section class="catalog">
+					<div class="monopad-catalog">
 						<div class="catalog-items">
 							<div class="catalog-item">
 								<div class="item-card">
 									<img class="card-img" src="img/easy-selfie.jpg" width="360" height="380" alt="Любительская селфи-палка">
 									<ul class="item-nav">
 										<li><a class="btn" href="#">В корзину</a></li>
-										<li><a href="#">Добавить к сравнению</a></li>
+										<li><a class="compare" href="#">Добавить к сравнению</a></li>
 									</ul>
 								</div>
-								<span class="item-name">Любительская селфи-палка</span>
-								<span class="price">500 руб.</span>
+								<div class="item-feature">
+									<a href="#" class="item-name">Любительская селфи-палка</a>
+									<span class="price">500 руб.</span>
+								</div>
 							</div>
 							<div class="catalog-item">
 								<div class="item-card">
 									<img class="card-img" src="img/pro-selfie.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
 									<ul class="item-nav">
 										<li><a class="btn" href="#">В корзину</a></li>
-										<li><a href="#">Добавить к сравнению</a></li>
+										<li><a class="compare" href="#">Добавить к сравнению</a></li>
 									</ul>
 								</div>
-								<span class="item-name">Профессиональная селфи-палка</span>
-								<span class="price">1 500 руб.</span>
+								<div class="item-feature">
+									<a href="#" class="item-name">Профессиональная<br> селфи-палка</a>
+									<span class="price">1 500 руб.</span>
+								</div>
 							</div>
 							<div class="catalog-item">
-								<div>
+								<div class="item-card">
 									<img class="card-img" src="img/underwater-selfie.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
 									<ul class="item-nav">
 										<li><a class="btn" href="#">В корзину</a></li>
-										<li><a href="#">Добавить к сравнению</a></li>
+										<li><a class="compare" href="#">Добавить к сравнению</a></li>
 									</ul>
 								</div>
-								<span class="item-name">Непотопляемая селфи-палка</span>
-								<span class="price">2 500руб.</span>
+								<div class="item-feature">
+									<a href="#" class="item-name">Непотопляемая селфи-палка</a>
+									<span class="price">2 500 руб.</span>
+								</div>
 							</div>
 							<div class="catalog-item">
-								<div>
+								<div class="item-card">
 									<img class="card-img" src="img/hand-selfie.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной">
 									<ul class="item-nav">
 										<li><a class="btn" href="#">В корзину</a></li>
-										<li><a href="#">Добавить к сравнению</a></li>
+										<li><a class="compare" href="#">Добавить к сравнению</a></li>
 									</ul>
 								</div>
-								<span class="item-name">Селфи палка Следуй за мной</span>
-								<span class="price">4 900 руб.</span>
+								<div class="item-feature">
+									<a href="#" class="item-name">Селфи-палка &laquo;Следуй за<br> мной&raquo;</a>
+									<span class="price">4 900 руб.</span>
+								</div>
 							</div>
 						</div>
 						<ul class="paginator">
-								<li class="prev"><a href="#prev">Назад</a></li>
-								<li class="page"><a>1</a></li>
-								<li class="page"><a href="#">2</a></li>
-								<li class="page"><a href="#">3</a></li>
-								<li  class="next"><a href="#next">Вперёд</a></li>
+							<li class="prev"><a href="#prev">Назад</a></li>
+							<li class="page current"><a>1</a></li>
+							<li class="page"><a href="#">2</a></li>
+							<li class="page"><a href="#">3</a></li>
+							<li  class="next"><a href="#next">Вперёд</a></li>
 						</ul>
 					</div>
 				</section>
@@ -170,7 +192,7 @@
 				</div>
 				<div class="footer-middle">
 					<p>г. Москва, ул. Строителей, 15</p>
-					<ul class="footer-nav">
+					<ul class="footer-main-nav">
 							<li><a href="#">Доставка</a></li>
 							<li><a href="#">Гарантия</a></li>
 							<li><a href="#">Контакты</a></li>
