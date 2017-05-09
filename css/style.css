@@ -2083,3 +2083,7 @@ li .compare:active {
 .current a {
 	opacity: 1;	
 }
+
+.map-iframe {
+	border: none;
+}
