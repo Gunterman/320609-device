@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>HTML Academy: Девайс</title>
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
     </head>
 	<body>
@@ -19,9 +19,9 @@
 						<input type="submit" value="Найти">
 					</form>
 					<ul class="user-nav">    
-						<li><a class="login" href="#">Войти</a></li>
-						<li><a class="сompare" href="#">Сравнить</a></li>
-						<li><a class="basket" href="#">Корзина</a></li>
+						<li class="login"><a href="#">Войти</a></li>
+						<li class="сompare"><a href="#">Сравнить</a></li>
+						<li class="basket"><a href="#">Корзина</a></li>
 					</ul>
 				</div>
 				<nav class="main-nav">
@@ -245,32 +245,6 @@
 				<button class="btn" type="submit">Отправить</button>
 			</form>
 		</div>
-		<script>
-			var link = document.querySelector(".contacts .btn");
-			var popup = document.querySelector(".modal-content");
-			var close = document.querySelector(".modal-content .modal-content-close");
-			
-			link.addEventListener("click", function (evt) {
-				evt.preventDefault();
-				popup.classList.add("modal-content-show");
-			});
-			close.addEventListener("click", function (evt) {
-				evt.preventDefault();
-				popup.classList.remove("modal-content-show");
-			});
-			
-			var mapLink = document.querySelector(".map-show");
-			var mapPopup = document.querySelector(".modal-map");
-			var mapClose = document.querySelector(".modal-map .modal-content-close");
-			
-			mapLink.addEventListener("click", function (evt) {
-				evt.preventDefault();
-				mapPopup.classList.add("modal-map-show");
-			});
-			mapClose.addEventListener("click", function (evt) {
-				evt.preventDefault();
-				mapPopup.classList.remove("modal-map-show");
-			});
-		</script>
+		<script src="js/script.min.js"></script>
 	</body>
 </html>
