@@ -915,7 +915,7 @@ input[id="btn-3"]:checked~.services-slide:nth-of-type(3) {
 }
 
 .about-us .caption {
-	font-family: "gilroy", "arial", sans-serif;
+	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 47px;
 	letter-spacing: 0.01em;
 	margin-top: 48px;
@@ -939,7 +939,7 @@ input[id="btn-3"]:checked~.services-slide:nth-of-type(3) {
 }
 
 .contacts .caption {
-	font-family: "gilroy", "arial", sans-serif;
+	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 47px;
 	letter-spacing: 0.01em;
 	margin-top: 48px;
