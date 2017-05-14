@@ -28,7 +28,7 @@ a {
 .caption,
 .breadcrumbs-title {
 	font-family: "gilroy", "Arial", sans-serif;
-	font-weight: bold;
+	font-weight: 800;
 	font-size: 47px;
 	line-height: 1.2em;
 	letter-spacing: 0.01em;
@@ -46,7 +46,7 @@ a {
 	font-size: 18px;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: 800;
 	text-decoration: none;
 	color: black;
 }
@@ -230,7 +230,7 @@ a {
 	display: flex;
 	font-size: 18px;
 	font-family: "gilroy", "Arial", sans-serif;
-	font-weight: bold;
+	font-weight: 800;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	z-index: 10;
@@ -321,7 +321,7 @@ a {
 	width: 16px;
 	height: 16px;
 	top: 7px;
-	margin-left: 12px
+	margin-left: 12px;
 }
 
 .slide {
@@ -523,7 +523,7 @@ input[id="slider-btn-3"]:checked~.slide:nth-of-type(3) {
 }
 
 .slide-feature .btn:active {
-	color: rgba(0, 0, 0, 0.3)
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .feature-table {
@@ -565,7 +565,7 @@ input[id="slider-btn-3"]:checked~.slide:nth-of-type(3) {
 	font-size: 18px;
 	line-height: 22px;
 	font-family: "gilroy", "Arial", sans-serif;
-	font-weight: bold;
+	font-weight: 800;
 	padding-top: 194px;
 	margin-right: 40px;
 	width: 160px;
@@ -577,7 +577,7 @@ input[id="slider-btn-3"]:checked~.slide:nth-of-type(3) {
 
 .feature-item a {
 	text-decoration: none;
-	color: rgba(0, 0, 0, 1)
+	color: rgba(0, 0, 0, 1);
 }
 
 .feature-item a:active {
@@ -667,7 +667,7 @@ input[name="toggle2"] {
 	font-size: 18px;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: 800;
 }
 
 .services-controls::before {
@@ -973,7 +973,7 @@ input[id="btn-3"]:checked~.services-slide:nth-of-type(3) {
 	font-size: 16px;
 	letter-spacing: 0.03em;
 	line-height: 40px;
-	font-weight: bold;
+	font-weight: 800;
 	letter-spacing: 0;
 	list-style: none;
 }
@@ -1031,7 +1031,7 @@ input[id="btn-3"]:checked~.services-slide:nth-of-type(3) {
 }
 
 .about-us .btn:active {
-	color: rgba(0, 0, 0, 0.3)
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .map-show {
@@ -1077,7 +1077,7 @@ input[id="btn-3"]:checked~.services-slide:nth-of-type(3) {
 }
 
 .contacts .btn:active {
-	color: rgba(0, 0, 0, 0.3)
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .modal-map {
@@ -1235,12 +1235,20 @@ input[id="btn-3"]:checked~.services-slide:nth-of-type(3) {
 	background-color: rgba(237, 181, 181, 0.5);
 }
 
+.write-us input[type="text"]:invalid {
+	background-color: rgba(237, 181, 181, 0.5);
+}
+
+.write-us .your-letter:invalid {
+	background-color: rgba(237, 181, 181, 0.5);
+}
+
 .write-us label {
 	display: block;
 	font-family: "gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	line-height: 18px;
-	font-weight: bold;
+	font-weight: 800;
 	color: black;
 	width: 320px;
 	margin-bottom: 9px;
@@ -1401,7 +1409,7 @@ input[id="btn-3"]:checked~.services-slide:nth-of-type(3) {
 	justify-content: space-between;
 	font-size: 18px;
 	font-family: "gilroy", "Arial", sans-serif;
-	font-weight: bold;
+	font-weight: 800;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	list-style: none;
@@ -1703,7 +1711,7 @@ fieldset {
 
 .filter-range-title {
 	font-family: "gilroy", "Arial", sans-serif;
-	font-weight: bold;
+	font-weight: 800;
 	font-size: 18px;
 	letter-spacing: 0.01em;
 	margin-bottom: 32px;
@@ -1784,7 +1792,7 @@ fieldset {
 
 .color legend {
 	font-family: "gilroy", "Arial", sans-serif;
-	font-weight: bold;
+	font-weight: 800;
 	font-size: 18px;
 	letter-spacing: 0.01em;
 	padding-top: 7px;
@@ -1842,7 +1850,7 @@ input[type="checkbox"]:checked+label::before {
 
 .bluetooth legend {
 	font-family: "gilroy", "Arial", sans-serif;
-	font-weight: bold;
+	font-weight: 800;
 	font-size: 18px;
 	letter-spacing: 0.01em;
 	padding-top: 8px;
@@ -1931,7 +1939,7 @@ button[class="btn"]:active::before {
 }
 
 button[class="btn"]:active {
-	color: rgba(0, 0, 0, 0.3)
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-items {
@@ -2032,21 +2040,21 @@ li .btn:active::before {
 }
 
 li .btn:active {
-	color: rgba(0, 0, 0, 0.3)
+	color: rgba(0, 0, 0, 0.3);
 }
 
-li .compare {
+li .compare-item {
 	font-family: "Open sans", "Arial", sans-serif;
 	line-height: 36px;
 	font-size: 13px;
 	opacity: 0.5;
 }
 
-li .compare:hover {
+li .compare-item:hover {
 	opacity: 1;
 }
 
-li .compare:active {
+li .compare-item:active {
 	opacity: 0.2;
 }
 
@@ -2062,7 +2070,7 @@ li .compare:active {
 .item-name {
 	display: block;
 	font-family: "gilroy", "Arial", sans-serif;
-	font-weight: bold;
+	font-weight: 800;
 	font-size: 18px;
 	width: 280px;
 	margin-bottom: auto;
@@ -2084,7 +2092,7 @@ li .compare:active {
 	justify-content: space-between;
 	list-style: none;
 	font-family: "gilroy", "Arial", sans-serif;
-	font-weight: bold;
+	font-weight: 800;
 	font-size: 16px;
 	text-transform: uppercase;
 	letter-spacing: 0.25em;
@@ -2102,7 +2110,7 @@ li .compare:active {
 }
 
 .prev:hover {
-	background-color: rgba(0, 0, 0, 0.08)
+	background-color: rgba(0, 0, 0, 0.08);
 }
 
 .prev:active {
@@ -2120,7 +2128,7 @@ li .compare:active {
 }
 
 .next:hover {
-	background-color: rgba(0, 0, 0, 0.08)
+	background-color: rgba(0, 0, 0, 0.08);
 }
 
 .next:active {
